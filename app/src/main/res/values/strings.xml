@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">CityCare</string>
+    <string name="login_title">Iniciar Sesión</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Contraseña</string>
+    <string name="login_button">Entrar</string>
+    <string name="register_button">Crear Cuenta</string>
+    <string name="chat_title">Chat de Soporte</string>
+    <string name="message_hint">Escribe un mensaje...</string>
+    <!-- Valor generado a partir de google-services.json para Google Sign-In -->
+    <string name="default_web_client_id">72697197914-c2turs134jtdqomh3ehpo64l56lr8e5e.apps.googleusercontent.com</string>
+    <string name="send_button">Enviar</string>
+    <string name="connect_button">Conectar</string>
+    <string name="settings_button">Configuración</string>
+    <string name="record_audio">Grabar Audio</string>
+    <string name="play_audio">Reproducir Audio</string>
+    <string name="stop_recording">Detener</string>
+</resources>

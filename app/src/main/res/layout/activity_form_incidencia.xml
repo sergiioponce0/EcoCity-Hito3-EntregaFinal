@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".view.FormIncidenciaActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nueva Incidencia"
+            android:textAppearance="?attr/textAppearanceHeadline5"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Título *"
+            android:textAppearance="?attr/textAppearanceLabelLarge"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:boxBackgroundColor="@color/design_default_color_background"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ej: Bache en Calle Principal"
+                android:inputType="textCapSentences"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Categoría -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Categoría *"
+            android:textAppearance="?attr/textAppearanceLabelLarge"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/actvCategoria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:text="Otros"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Descripción -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Descripción *"
+            android:textAppearance="?attr/textAppearanceLabelLarge"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:boxBackgroundColor="@color/design_default_color_background"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etDescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:gravity="top"
+                android:hint="Describe la incidencia con detalle..."
+                android:inputType="textMultiLine"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Nivel de Urgencia -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Nivel de Urgencia"
+            android:textAppearance="?attr/textAppearanceLabelLarge"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/actvUrgencia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:text="Media (Intervención necesaria)"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Multimedia y Ubicación -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Multimedia y Ubicación"
+            android:textAppearance="?attr/textAppearanceLabelLarge"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:columnCount="2"
+            android:rowCount="2">
+
+            <com.google.android.material.card.MaterialCardView style="@style/Widget.App.CardMedia" android:id="@+id/btnTomarFoto">
+                <LinearLayout style="@style/Widget.App.CardMedia.LinearLayout">
+                    <ImageView style="@style/Widget.App.CardMedia.ImageView" android:src="@drawable/ic_camera"/>
+                    <TextView style="@style/Widget.App.CardMedia.TextView" android:text="Tomar Foto"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView style="@style/Widget.App.CardMedia" android:id="@+id/btnSeleccionarFoto">
+                <LinearLayout style="@style/Widget.App.CardMedia.LinearLayout">
+                    <ImageView style="@style/Widget.App.CardMedia.ImageView" android:src="@drawable/ic_gallery"/>
+                    <TextView style="@style/Widget.App.CardMedia.TextView" android:text="Seleccionar"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView style="@style/Widget.App.CardMedia" android:id="@+id/btnGrabarAudio">
+                <LinearLayout style="@style/Widget.App.CardMedia.LinearLayout">
+                    <ImageView style="@style/Widget.App.CardMedia.ImageView" android:src="@drawable/ic_mic"/>
+                    <TextView style="@style/Widget.App.CardMedia.TextView" android:text="Grabar Audio"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView style="@style/Widget.App.CardMedia" android:id="@+id/btnUbicacion">
+                <LinearLayout style="@style/Widget.App.CardMedia.LinearLayout">
+                    <ImageView style="@style/Widget.App.CardMedia.ImageView" android:src="@drawable/ic_location"/>
+                    <TextView style="@style/Widget.App.CardMedia.TextView" android:text="Ubicación"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </GridLayout>
+
+        <!-- Botones de Acción -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCancelar"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:text="Cancelar" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEnviarReporte"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:text="Enviar Reporte" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "72697197914",
+    "project_id": "ecocity-bb115",
+    "storage_bucket": "ecocity-bb115.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:72697197914:android:9229045228d010ef3baf63",
+        "android_client_info": {
+          "package_name": "com.example.ecocity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "72697197914-6k78vqepjnlh2jet0phvof26gj2c58p2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ecocity",
+            "certificate_hash": "7669c0b9f966a5eda334b0f54ecc6ad315e450e0"
+          }
+        },
+        {
+          "client_id": "72697197914-c2turs134jtdqomh3ehpo64l56lr8e5e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9qlOtm-v6DWRRqOnKoNHdrEaVxQKorvQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "72697197914-c2turs134jtdqomh3ehpo64l56lr8e5e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

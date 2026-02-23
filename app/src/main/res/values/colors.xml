@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="purple_500">#6200EE</color>
+
+    <!-- Green Palette -->
+    <color name="green_primary">#4CAF50</color>
+    <color name="green_dark">#388E3C</color>
+    <color name="green_light">#C8E6C9</color>
+    <color name="green_accent">#8BC34A</color>
+
+    <!-- Standard Colors -->
+    <color name="gray">#FF9E9E9E</color>
+    <color name="gray_light">#FFF5F5F5</color>
+    <color name="gray_dark">#FF616161</color>
+    <color name="red">#FFE53935</color>
+</resources>
